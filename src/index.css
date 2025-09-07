@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* Opcional: puedes mantener las directivas originales si prefieres */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
