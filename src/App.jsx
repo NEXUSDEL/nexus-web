@@ -13,7 +13,7 @@ const NAV = [
 const delineacionServices = [
   {
     title: "Planos y Delineación",
-    desc: "Diseño y normalización de planos eléctricos industriales (unifilares, esquemas de control, bandejas y canalizaciones).",
+    desc: "Elaboración de esquemas eléctricos industriales desde cero: unifilares, multifilares, control y potencia.",
   },
   {
     title: "As-Built & Actualizaciones",
@@ -25,32 +25,32 @@ const delineacionServices = [
   },
   {
     title: "Cumplimiento Normativo",
-    desc: "Documentación conforme a reglamentos y estándares (REBT/IEC), listas de comprobación y marcado CE.",
+    desc: "Digitalización, actualización y migración de planos antiguos a normativas IEC 61355 e IEC 81346.",
   },
   {
-    title: "Integración CAD/BIM",
-    desc: "Modelado y coordinación con Autodesk® (AutoCAD/Plant), Revit® MEP y exportación IFC.",
+    title: "Integración 3D",
+    desc: "Creacion de Gemelo Digital para simular situaciones en el entorno virtual sin riesgo para la instalación real.",
   },
   {
-    title: "Soporte a Obra",
+    title: "Soporte a OT",
     desc: "Planificación, revisiones en campo y ajustes durante montaje y puesta en marcha.",
   },
 ];
 
 const asesoramientoPoints = [
   {
-    title: "Macros y Objetos 3D",
-    desc: "Automatiza tareas repetitivas y reduce el tiempo de diseño drásticamente.",
+    title: "Estandarización",
+    desc: "Definición e implementación de estándares de diseño adaptados a tu empresa",
     icon: "Wrench"
   },
   {
     title: "Listas de Materiales",
-    desc: "Genera BOMs precisas y sin errores con un solo clic.",
+    desc: "Creación de bibliotecas de macros, objetos, plantillas y bases de datos actualizadas.",
     icon: "Doc"
   },
   {
     title: "Optimización Documental",
-    desc: "Exporta datos de cableado y mecanizado directamente a producción.",
+    desc: "Automatización de cableados, generación de listas de materiales (BOM), planos de mecanizado personalizados.",
     icon: "Shield"
   }
 ];
@@ -58,17 +58,17 @@ const asesoramientoPoints = [
 const formacionPrograms = [
   {
     title: "Formación de Incorporación",
-    desc: "Preparamos a tus nuevos ingenieros para que sean productivos desde el primer día.",
+    desc: "Entrenamiento operativo y estratégico a todos los niveles: integración de nuevos ingenieros, reciclaje de equipos técnicos y actualización de perfiles senior.",
     icon: "Doc"
   },
   {
     title: "Promoción Interna",
-    desc: "Capacitamos a tus técnicos de taller para que den el salto a la oficina técnica.",
+    desc: "Formación práctica para maximizar la eficiencia, reducir tiempos en diseño y acelerar la producción.",
     icon: "Wrench"
   },
   {
     title: "Actualización de Habilidades",
-    desc: "Nos aseguramos de que tu personal senior domine las últimas funcionalidades.",
+    desc: "Adaptado a empresas fabricantes de maquinaria, cuadros eléctricos e instaladores industriales.",
     icon: "Shield"
   }
 ];
@@ -95,7 +95,7 @@ const features = [
 ];
 
 const social = [
-  { label: "LinkedIn", href: "https://www.linkedin.com" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/nexus-delineaci%C3%B3n-el%C3%A9ctrica-industrial/ " },
 ];
 
 /* --- Iconos SVG inline --- */
@@ -211,8 +211,8 @@ function Hero() {
       </div>
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-24 text-center">
         <Logo variant="light" className="mx-auto h-16 sm:h-20 mb-6" />
-        <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight">Delineación, Asesoramiento y Formación</h1>
-        <p className="mt-5 text-base sm:text-lg text-neutral-300 max-w-3xl mx-auto">Documentación técnica precisa, procesos optimizados y equipo capacitado. Acompañamos tu proyecto desde la ingeniería hasta el montaje, con foco en calidad y eficiencia.</p>
+        <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight">Delineación, Asesoramiento y Formación Eléctrica</h1>
+        <p className="mt-5 text-base sm:text-lg text-neutral-300 max-w-3xl mx-auto">En NEXUS optimizamos tus procesos de diseño eléctrico aportando documentación precisa, flujos de trabajo estandarizados y formación avanzada. Somos tu partner técnico: te ayudamos a avanzar más rápido y sin errores..</p>
         <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
           <a href="#contacto" className="inline-flex items-center justify-center rounded-2xl px-6 py-3 text-sm font-semibold shadow-lg bg-white text-black hover:bg-neutral-200">Solicitar presupuesto</a>
           <a href="#delineacion" className="inline-flex items-center justify-center rounded-2xl px-6 py-3 text-sm font-semibold border border-white/20 hover:bg-white/10">Ver servicios</a>
@@ -335,8 +335,8 @@ function About() {
           <p className="mt-4 text-neutral-600">En <strong>NEXUS</strong> nos especializamos en delineación eléctrica industrial, asesoramiento y formación. Nuestro objetivo es entregar documentación clara y ejecutable que permita construir sin sorpresas: planos coherentes, listados completos y memoria técnica alineada con normativa.</p>
           <ul className="mt-6 space-y-3 text-neutral-700">
             <li>• Experiencia en fabricantes de cuadros eléctricos, maquinaria y automatización.</li>
-            <li>• Especialistas en trabajar con PYMEs de menos de 5 empleados.</li>
-            <li>• Comunicación fluida con ingeniería, compras y obra.</li>
+            <li>• Especialistas en estandarización de procesos.</li>
+            <li>• Comunicación fluida con ingeniería, compras y producción.</li>
           </ul>
         </div>
         <div className="rounded-2xl border border-neutral-200 p-6 bg-neutral-50">
@@ -351,7 +351,7 @@ function About() {
             </div>
             <div className="rounded-xl p-4 bg-white border border-neutral-200">
               <h4 className="font-semibold">Herramientas</h4>
-              <p className="mt-1 text-neutral-600">AutoCAD®, Revit® MEP, Plant 3D, EPLAN, Office/Excel, IFC.</p>
+              <p className="mt-1 text-neutral-600">EPLAN Electric, EPLAN Pro Panel, Eplan FLuid.</p>
             </div>
           </div>
         </div>
@@ -368,9 +368,9 @@ function Contact() {
           <h2 className="text-2xl sm:text-4xl font-extrabold text-neutral-900">Contacto</h2>
           <p className="mt-4 text-neutral-600">Cuéntanos brevemente tu necesidad y te responderemos con una propuesta personalizada en menos de 24 horas.</p>
           <div className="mt-6 space-y-3 text-neutral-700">
-            <p className="flex items-center gap-2"><IconPhone className="h-5 w-5" /> <a href="tel:+34999999999" className="underline decoration-2 underline-offset-4 decoration-red-600">+34 999 99 99 99</a></p>
-            <p className="flex items-center gap-2"><IconMail className="h-5 w-5" /> <a href="mailto:contacto@nexus-elec.com" className="underline decoration-2 underline-offset-4 decoration-red-600">contacto@nexus-elec.com</a></p>
-            <p className="flex items-center gap-2"><IconMapPin className="h-5 w-5" /> Calle / Ciudad, España</p>
+            <p className="flex items-center gap-2"><IconPhone className="h-5 w-5" /> <a href="tel:+34625522145" className="underline decoration-2 underline-offset-4 decoration-red-600">+34 625 52 21 45</a></p>
+            <p className="flex items-center gap-2"><IconMail className="h-5 w-5" /> <a href="mailto:nexusdelineacion@gmail.com" className="underline decoration-2 underline-offset-4 decoration-red-600">contacto@nexus-elec.com</a></p>
+            <p className="flex items-center gap-2"><IconMapPin className="h-5 w-5" /> Barcelona, España</p>
             <div className="flex gap-3 pt-2">
               {social.map((s, i) => (
                 <a key={i} href={s.href} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-2xl px-3 py-2 border border-neutral-300 text-sm hover:bg-neutral-100">
