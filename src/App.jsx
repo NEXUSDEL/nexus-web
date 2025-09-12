@@ -171,7 +171,57 @@ const IconList = ({ className = "h-6 w-6" }) => (
     <line x1="10" y1="18" x2="20" y2="18" />
   </svg>
 );
-// ...otros iconos personalizados según la sección...
+
+// Iconos utilitarios y de contacto
+const IconBolt = ({ className = "h-6 w-6 text-yellow-400" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+    <path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z" />
+  </svg>
+);
+const IconWrench = ({ className = "h-6 w-6" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="#334155" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+    <path d="M14.7 4a4 4 0 0 1 5.6 5.6L14 16.9 10 13l5.7-9z" />
+    <path d="M2 20l6-6" />
+  </svg>
+);
+const IconShield = ({ className = "h-6 w-6" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+    <path d="M12 2l7 4v6c0 5-4 9-7 10-3-1-7-5-7-10V6l7-4z" />
+  </svg>
+);
+const IconPhone = ({ className = "h-5 w-5" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.09 8.63 19.86 19.86 0 0 1 0 0.18V2a2 2 0 0 1 2 2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H4a16 16 0 0 0 16 16z" />
+  </svg>
+);
+const IconMail = ({ className = "h-5 w-5" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+    <rect x="2" y="4" width="20" height="16" rx="2" />
+    <polyline points="22,6 12,13 2,6" />
+  </svg>
+);
+const IconMapPin = ({ className = "h-5 w-5" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+    <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0z" />
+    <circle cx="12" cy="10" r="3" />
+  </svg>
+);
+const IconLinkedIn = ({ className = "h-4 w-4" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="#2563eb" aria-hidden>
+    <rect x="2" y="2" width="20" height="20" rx="4" />
+    <path d="M7 10v7M7 7v.01M12 17v-4a2 2 0 1 1 4 0v4" stroke="#fff" strokeWidth="2" strokeLinecap="round" />
+  </svg>
+);
+const IconMenu = ({ className = "h-5 w-5" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="#334155" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+    <path d="M4 6h16M4 12h16M4 18h16" />
+  </svg>
+);
+const IconClose = ({ className = "h-5 w-5" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="#334155" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+    <path d="M6 18L18 6M6 6l12 12" />
+  </svg>
+);
 
 function Logo({ variant = "dark", className = "h-10 w-auto" }) {
   const src = variant === "light" ? "/logos/nexus-light.png" : "/logos/nexus-dark.png";
