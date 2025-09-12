@@ -75,16 +75,20 @@ const formacionPrograms = [
 
 const projects = [
   {
-    title: "Línea de producción automatizada",
-    img: "https://images.unsplash.com/photo-1581090700227-1e37b190418e?q=80&w=1600&auto=format&fit=crop",
+    title: "Armarios de potencia",
+    img: "/fotos/Potencia.png",
   },
   {
-    title: "Centro de transformación 20/0,4 kV",
-    img: "https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=1600&auto=format&fit=crop",
+    title: "Armario de Control cableado",
+    img: "/fotos/Control.png",
   },
   {
-    title: "Sala de cuadros y CCM",
-    img: "https://images.unsplash.com/photo-1581093588401-16ef1b2c6e6c?q=80&w=1600&auto=format&fit=crop",
+    title: "Evaluacion de enrutado",
+    imgs: [
+      "/fotos/Evaluación W..png",
+      "/fotos/Wiring.png",
+      "/fotos/Wiring2.png"
+    ],
   },
 ];
 
@@ -316,7 +320,20 @@ function Projects() {
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((p, i) => (
             <figure key={i} className="group overflow-hidden rounded-2xl border border-neutral-200 bg-white">
-              <img src={p.img} alt={p.title} className="aspect-[16/10] w-full object-cover group-hover:scale-[1.03] transition-transform" />
+              {p.imgs ? (
+                <div className="flex flex-row gap-2 justify-center items-center p-2">
+                  {p.imgs.map((imgSrc, idx) => (
+                    <img
+                      key={idx}
+                      src={imgSrc}
+                      alt={p.title + ' ' + (idx + 1)}
+                      className="aspect-[16/10] w-1/3 object-cover group-hover:scale-[1.03] transition-transform rounded-lg border"
+                    />
+                  ))}
+                </div>
+              ) : (
+                <img src={p.img} alt={p.title} className="aspect-[16/10] w-full object-cover group-hover:scale-[1.03] transition-transform" />
+              )}
               <figcaption className="p-4 text-sm text-neutral-700">{p.title}</figcaption>
             </figure>
           ))}
