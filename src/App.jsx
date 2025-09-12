@@ -214,10 +214,11 @@ const IconClose = ({ className = "h-5 w-5" }) => (
   </svg>
 );
 
-function Logo({ className }) {
-  // Usar siempre el mismo logo grande para ambos modos
-  const src = "/logos/Baner_BSF.png";
-  const sizeClass = "h-32 w-auto";
+function Logo({ variant = "dark", className }) {
+  // Si es para el menú (dark), mostrar Logo X Blanco.png; si es para Hero (light), Baner_BSF.png grande y centrado
+  const src = variant === "light" ? "/logos/Baner_BSF.png" : "/logos/Logo X Blanco.png";
+  // Si es Hero, forzar centrado y tamaño grande
+  const sizeClass = variant === "light" ? (className || "mx-auto h-32 w-auto") : (className || "h-8 w-auto");
   return <img src={src} alt="NEXUS Delineación Eléctrica Industrial" className={sizeClass} />;
 }
 
@@ -266,7 +267,7 @@ function Hero() {
         <Logo variant="light" className="h-32 w-auto" />
       </div>
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-24 text-center">
-        <Logo variant="light" className="mx-auto h-16 sm:h-20 mb-6" />
+  <Logo variant="light" className="mx-auto h-32 sm:h-40 mb-6" />
         <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight">Delineación, Asesoramiento y Formación Eléctrica</h1>
         <p className="mt-5 text-base sm:text-lg text-neutral-300 max-w-3xl mx-auto">En NEXUS optimizamos tus procesos de diseño eléctrico aportando documentación precisa, flujos de trabajo estandarizados y formación avanzada. Somos tu partner técnico: te ayudamos a avanzar más rápido y sin errores..</p>
         <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
