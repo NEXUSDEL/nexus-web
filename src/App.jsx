@@ -293,13 +293,13 @@ function Hero() {
 
 function Delineacion() {
   return (
-  <section id="delineacion" className="py-20 bg-white" style={{ backgroundImage: 'url("/fotos/Fondo-Plano-Electrico.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+  <section id="delineacion" className="py-20 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl sm:text-4xl font-extrabold text-neutral-900">Delineación Eléctrica Industrial</h2>
         <p className="mt-3 text-neutral-600 max-w-3xl">¿Picos de trabajo en la oficina técnica? ¿Nuevos proyectos que desbordan a tu equipo? Que la falta de recursos internos no frene tu producción. Funcionamos como una extensión experta de tu equipo de ingeniería.</p>
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {delineacionServices.map((s, idx) => (
-            <div key={idx} className="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm hover:shadow-md transition-shadow" style={{ backgroundImage: 'url("/fotos/Fondo-Plano-Electrico.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <div key={idx} className="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm hover:shadow-md transition-shadow">
               <div className="inline-flex items-center justify-center rounded-md bg-red-50 p-2">
                 {idx === 0 && <IconCompass className="h-6 w-6" />} {/* Planos y Delineación */}
                 {idx === 1 && <IconUpdate className="h-6 w-6" />} {/* As-Built & Actualizaciones */}
@@ -323,13 +323,13 @@ function Delineacion() {
 
 function Asesoramiento() {
   return (
-  <section id="asesoramiento" className="py-20 bg-neutral-50" style={{ backgroundImage: 'url("/fotos/Fondo-Plano-Electrico.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+  <section id="asesoramiento" className="py-20 bg-neutral-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl sm:text-4xl font-extrabold text-neutral-900">Asesoramiento Especializado</h2>
         <p className="mt-3 text-neutral-600 max-w-3xl">¿Sientes que tu equipo solo aprovecha el 30% del potencial de EPLAN? Tener el mejor software no garantiza la eficiencia. La estandarización de procesos, sí. En NEXUS, no solo diseñamos; optimizamos tu flujo de trabajo de ingeniería.</p>
         <div className="mt-10 grid gap-6 sm:grid-cols-1 lg:grid-cols-3">
           {asesoramientoPoints.map((point, idx) => (
-            <div key={idx} className="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm hover:shadow-md transition-shadow" style={{ backgroundImage: 'url("/fotos/Fondo-Plano-Electrico.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <div key={idx} className="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm hover:shadow-md transition-shadow">
               <div className="inline-flex items-center justify-center rounded-md bg-red-50 p-2">
                 {idx === 0 && <IconIndustry className="h-6 w-6" />} {/* Estandarización */}
                 {idx === 1 && <IconList className="h-6 w-6" />} {/* Listas de Materiales */}
@@ -350,13 +350,13 @@ function Asesoramiento() {
 
 function Formacion() {
   return (
-  <section id="formacion" className="py-20 bg-white" style={{ backgroundImage: 'url("/fotos/Fondo-Plano-Electrico.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+  <section id="formacion" className="py-20 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl sm:text-4xl font-extrabold text-neutral-900">Formación Especializada</h2>
         <p className="mt-3 text-neutral-600 max-w-3xl">¿Quieres promocionar a tus técnicos pero te falta tiempo para formarlos? El mayor activo de tu empresa es tu equipo. En NEXUS, nos encargamos de potenciarlo. Ofrecemos formación especializada en EPLAN Electric y ProPanel.</p>
         <div className="mt-10 grid gap-6 sm:grid-cols-1 lg:grid-cols-3">
           {formacionPrograms.map((program, idx) => (
-            <div key={idx} className="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm hover:shadow-md transition-shadow" style={{ backgroundImage: 'url("/fotos/Fondo-Plano-Electrico.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <div key={idx} className="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm hover:shadow-md transition-shadow">
               <div className="inline-flex items-center justify-center rounded-md bg-red-50 p-2">
                 {program.icon === "Wrench" ? <IconWrench className="h-6 w-6 text-red-600" /> : program.icon === "Doc" ? <IconDoc className="h-6 w-6 text-red-600" /> : <IconShield className="h-6 w-6 text-red-600" />}
               </div>
@@ -375,7 +375,7 @@ function Formacion() {
 
 function Projects() {
   return (
-  <section id="proyectos" className="py-20 bg-neutral-50" style={{ backgroundImage: 'url("/fotos/Fondo-Plano-Electrico.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+  <section id="proyectos" className="py-20 bg-neutral-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-end justify-between gap-6 flex-wrap">
           <h2 className="text-2xl sm:text-4xl font-extrabold text-neutral-900">Proyectos</h2>
@@ -383,7 +383,7 @@ function Projects() {
         </div>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((p, i) => (
-            <figure key={i} className="group overflow-hidden rounded-2xl border border-neutral-200 bg-white" style={{ backgroundImage: 'url("/fotos/Fondo-Plano-Electrico.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <figure key={i} className="group overflow-hidden rounded-2xl border border-neutral-200 bg-white">
               {p.imgs ? (
                 <div className="flex flex-row gap-2 justify-center items-center p-2">
                   {p.imgs.map((imgSrc, idx) => (
@@ -409,7 +409,7 @@ function Projects() {
 
 function About() {
   return (
-  <section id="nosotros" className="py-20 bg-white" style={{ backgroundImage: 'url("/fotos/Fondo-Plano-Electrico.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+  <section id="nosotros" className="py-20 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
         <div>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-neutral-900">Nosotros</h2>
@@ -420,17 +420,17 @@ function About() {
             <li>• Comunicación fluida con ingeniería, compras y producción.</li>
           </ul>
         </div>
-  <div className="rounded-2xl border border-neutral-200 p-6 bg-neutral-50" style={{ backgroundImage: 'url("/fotos/Fondo-Plano-Electrico.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+  <div className="rounded-2xl border border-neutral-200 p-6 bg-neutral-50">
           <div className="flex items-center gap-3">
             <Logo variant="dark" />
             <span className="text-sm text-neutral-600">Delineación Eléctrica Industrial</span>
           </div>
           <div className="mt-6 grid sm:grid-cols-2 gap-4 text-sm">
-            <div className="rounded-xl p-4 bg-white border border-neutral-200" style={{ backgroundImage: 'url("/fotos/Fondo-Plano-Electrico.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <div className="rounded-xl p-4 bg-white border border-neutral-200">
               <h4 className="font-semibold">Metodología</h4>
               <p className="mt-1 text-neutral-600">Kick-off, hitos, control de cambios y entrega final validada.</p>
             </div>
-            <div className="rounded-xl p-4 bg-white border border-neutral-200" style={{ backgroundImage: 'url("/fotos/Fondo-Plano-Electrico.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <div className="rounded-xl p-4 bg-white border border-neutral-200">
               <h4 className="font-semibold">Herramientas</h4>
               <p className="mt-1 text-neutral-600">EPLAN Electric, EPLAN Pro Panel, Eplan FLuid.</p>
             </div>
@@ -443,7 +443,7 @@ function About() {
 
 function Contact() {
   return (
-  <section id="contacto" className="py-20 bg-neutral-50" style={{ backgroundImage: 'url("/fotos/Fondo-Plano-Electrico.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+  <section id="contacto" className="py-20 bg-neutral-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-start">
         <div>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-neutral-900">Contacto</h2>
@@ -462,7 +462,7 @@ function Contact() {
             </div>
           </div>
         </div>
-  <form className="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm" style={{ backgroundImage: 'url("/fotos/Fondo-Plano-Electrico.png")', backgroundSize: 'cover', backgroundPosition: 'center' }} action="https://formspree.io/f/xbjvpqgj" method="POST">
+  <form className="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm" action="https://formspree.io/f/xbjvpqgj" method="POST">
           <div className="grid sm:grid-cols-2 gap-4">
             <div>
               <label className="text-sm">Nombre</label>
