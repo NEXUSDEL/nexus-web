@@ -191,7 +191,7 @@ const IconShield = ({ className = "h-6 w-6" }) => (
 );
 const IconPhone = ({ className = "h-5 w-5" }) => (
   <svg className={className} viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.09 8.63 19.86 19.86 0 0 1 0 0.18V2a2 2 0 0 1 2 2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H4a16 16 0 0 0 16 16z" />
+    <path d="M22 16.92V21a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 3 5.18 2 2 0 0 1 5 3h4a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H7a16 16 0 0 0 10 10h3a2 2 0 0 1 2 2z" />
   </svg>
 );
 const IconMail = ({ className = "h-5 w-5" }) => (
