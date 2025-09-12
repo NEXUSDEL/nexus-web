@@ -518,7 +518,7 @@ function App() {
   return (
     <div
       className="min-h-screen text-neutral-900 scroll-smooth bg-cover bg-center"
-      style={{ backgroundImage: 'url("/fotos/Fondo Plano Eléctrico.png")' }}
+  style={{ backgroundImage: 'url("/fotos/Fondo-Plano-Electrico.png")' }}
     >
       <Navbar />
       <main>
