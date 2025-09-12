@@ -466,7 +466,7 @@ function Footer() {
   );
 }
 
-export default function NexusLanding() {
+function App() {
   return (
     <div className="min-h-screen bg-white text-neutral-900 scroll-smooth">
       <Navbar />
@@ -483,3 +483,5 @@ export default function NexusLanding() {
     </div>
   );
 }
+
+export default App;
