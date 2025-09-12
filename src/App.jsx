@@ -214,14 +214,17 @@ const IconClose = ({ className = "h-5 w-5" }) => (
   </svg>
 );
 
-function Logo({ variant = "dark" }) {
-  // Si es para el menú (dark), mostrar Logo X Blanco.png siempre grande; si es para Hero (light), Baner_BSF.png grande y centrado
+function Logo({ variant = "dark", className }) {
+  // Si es para el menú (dark), mostrar Logo X Blanco.png un poco más pequeño; si es para Hero (light), Baner_BSF.png grande y centrado
   const src = variant === "light" ? "/logos/Baner_BSF.png" : "/logos/Logo X Blanco.png";
-  const sizeClass = variant === "light"
-    ? "mx-auto h-32 sm:h-40 w-auto"
-    : "h-24 sm:h-32 w-auto";
+  let sizeClass = "";
+  if (variant === "light") {
+    sizeClass = className || "mx-auto h-32 sm:h-40 w-auto";
+  } else {
+    sizeClass = className || "h-16 sm:h-20 w-auto";
+  }
   return <img src={src} alt="NEXUS Delineación Eléctrica Industrial" className={sizeClass} />;
-}
+
 
 
 function Navbar() {
@@ -503,7 +506,7 @@ function Footer() {
     <footer className="py-10 bg-neutral-950 text-neutral-300">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
         <div className="flex items-center gap-3">
-          <Logo variant="light" className="h-8" />
+          <Logo variant="light" className="h-8 w-auto" />
           <span className="text-sm">NEXUS · Delineación Eléctrica Industrial</span>
         </div>
         <div className="text-xs">© {year} NEXUS. Todos los derechos reservados.</div>
@@ -528,6 +531,6 @@ function App() {
       <Footer />
     </div>
   );
-}
+
 
 export default App;
