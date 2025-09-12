@@ -224,8 +224,7 @@ function Logo({ variant = "dark", className }) {
     sizeClass = className || "h-16 sm:h-20 w-auto";
   }
   return <img src={src} alt="NEXUS Delineación Eléctrica Industrial" className={sizeClass} />;
-
-
+}
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -531,6 +530,5 @@ function App() {
       <Footer />
     </div>
   );
-
-
+}
 export default App;
