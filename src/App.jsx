@@ -375,7 +375,11 @@ function Formacion() {
 
 function Projects() {
   return (
-  <section id="proyectos" className="py-20 bg-neutral-50">
+  <section
+    id="proyectos"
+    className="py-20 bg-neutral-50"
+    style={{ backgroundImage: 'url("/fotos/Fondo-Plano-Electrico.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}
+  >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-end justify-between gap-6 flex-wrap">
           <h2 className="text-2xl sm:text-4xl font-extrabold text-neutral-900">Proyectos</h2>
