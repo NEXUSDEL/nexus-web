@@ -103,74 +103,75 @@ const social = [
 ];
 
 /* --- Iconos SVG inline --- */
-// Iconos industriales, limpios y profesionales con colores diferenciados
-const IconMenu = ({ className = "h-5 w-5" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="#374151" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-    <rect x="3" y="6" width="18" height="2" rx="1" fill="#60a5fa" />
-    <rect x="3" y="11" width="18" height="2" rx="1" fill="#60a5fa" />
-    <rect x="3" y="16" width="18" height="2" rx="1" fill="#60a5fa" />
+// Iconos personalizados industriales para cada sección
+const IconCompass = ({ className = "h-6 w-6" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="#1e293b" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="12" cy="7" r="2" fill="#60a5fa" />
+    <path d="M12 9v7" />
+    <path d="M9 21l3-5 3 5" />
+    <path d="M7 14l-4-7h18l-4 7" />
+    <rect x="15.5" y="2.5" width="2" height="6" rx="1" fill="#fbbf24" transform="rotate(30 16.5 5.5)" />
+    <rect x="6.5" y="2.5" width="2" height="6" rx="1" fill="#fbbf24" transform="rotate(-30 7.5 5.5)" />
   </svg>
 );
-const IconClose = ({ className = "h-5 w-5" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="#ef4444" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-    <line x1="6" y1="6" x2="18" y2="18" />
-    <line x1="6" y1="18" x2="18" y2="6" />
+const IconUpdate = ({ className = "h-6 w-6" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="#0284c7" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M21 12a9 9 0 1 1-3.5-7.1" />
+    <polyline points="21 3 21 9 15 9" />
   </svg>
 );
-const IconPhone = ({ className = "h-5 w-5" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="#22c55e" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-    <path d="M22 16.92V21a1 1 0 0 1-1.1 1 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 3.1 1 1 0 0 1 3 2h4.09a1 1 0 0 1 1 .75c.12.58.32 1.15.6 1.69a1 1 0 0 1-.25 1L7.7 7.7a16 16 0 0 0 8.6 8.6l1.25-1.25a1 1 0 0 1 1-.25c.54.28 1.11.48 1.69.6a1 1 0 0 1 .75 1V21z" />
-  </svg>
-);
-const IconMail = ({ className = "h-5 w-5" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="#3b82f6" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-    <rect x="3" y="5" width="18" height="14" rx="2" fill="#dbeafe" />
-    <polyline points="3,7 12,13 21,7" fill="none" />
-  </svg>
-);
-const IconMapPin = ({ className = "h-5 w-5" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="#f59e42" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-    <path d="M12 2C16.4183 2 20 5.5817 20 10c0 7-8 12-8 12S4 17 4 10c0-4.4183 3.5817-8 8-8z" fill="#fbbf24" />
-    <circle cx="12" cy="10" r="3" fill="#fff" />
-  </svg>
-);
-const IconBolt = ({ className = "h-6 w-6" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="#fde047" stroke="#facc15" strokeWidth="1.5" aria-hidden>
-    <polygon points="13 2 3 14 10 14 9 22 21 8 14 8 15 2" />
+const IconRulerCalc = ({ className = "h-6 w-6" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="#334155" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="2" y="14" width="8" height="8" rx="2" fill="#f1f5f9" />
+    <rect x="14" y="2" width="8" height="8" rx="2" fill="#f1f5f9" />
+    <path d="M4 18h4M6 16v4" />
+    <path d="M16 4h4M18 2v8" />
   </svg>
 );
 const IconDoc = ({ className = "h-6 w-6" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="#60a5fa" stroke="#2563eb" strokeWidth="1.5" aria-hidden>
+  <svg className={className} viewBox="0 0 24 24" fill="#e0e7ef" stroke="#2563eb" strokeWidth="1.5" aria-hidden>
     <rect x="4" y="2" width="16" height="20" rx="2" />
     <rect x="8" y="6" width="8" height="2" rx="1" fill="#fff" />
     <rect x="8" y="10" width="8" height="2" rx="1" fill="#fff" />
     <rect x="8" y="14" width="5" height="2" rx="1" fill="#fff" />
   </svg>
 );
-const IconWrench = ({ className = "h-6 w-6" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="#e5e7eb" stroke="#6b7280" strokeWidth="1.5" aria-hidden>
-    <path d="M22 14.92A7 7 0 0 1 9.08 2a5 5 0 0 0 6.84 6.84A7 7 0 0 1 22 14.92z" />
-    <circle cx="7" cy="17" r="3" fill="#6b7280" />
+const IconCube3D = ({ className = "h-6 w-6" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="#fff" stroke="#0ea5e9" strokeWidth="1.7" strokeLinejoin="round">
+    <polygon points="12 2 22 7 12 12 2 7 12 2" fill="#fbbf24" />
+    <polyline points="2 7 2 17 12 22 22 17 22 7" />
+    <polyline points="12 12 12 22" />
   </svg>
 );
-const IconShield = ({ className = "h-6 w-6" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="#fee2e2" stroke="#ef4444" strokeWidth="1.5" aria-hidden>
-    <path d="M12 2l7 4v6c0 5-4 9-7 10-3-1-7-5-7-10V6l7-4z" />
-    <path d="M12 2v20" stroke="#ef4444" strokeWidth="1.5" />
+const IconSupport = ({ className = "h-6 w-6" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="#fff" stroke="#22c55e" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="12" cy="12" r="10" fill="#f1f5f9" />
+    <path d="M8 15c0 2 8 2 8 0" />
+    <circle cx="9" cy="10" r="1" fill="#22c55e" />
+    <circle cx="15" cy="10" r="1" fill="#22c55e" />
+    <path d="M12 17v2" />
+    <path d="M19 19l-2-2" />
+    <path d="M5 19l2-2" />
   </svg>
 );
-const IconClock = ({ className = "h-5 w-5" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="#f3f4f6" stroke="#64748b" strokeWidth="2" aria-hidden>
-    <circle cx="12" cy="12" r="10" />
-    <path d="M12 6v6l4 2" />
+const IconIndustry = ({ className = "h-6 w-6" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="#f1f5f9" stroke="#334155" strokeWidth="1.7" strokeLinejoin="round">
+    <rect x="2" y="12" width="20" height="8" rx="2" />
+    <rect x="6" y="8" width="4" height="4" />
+    <rect x="14" y="4" width="4" height="8" />
   </svg>
 );
-const IconLinkedIn = ({ className = "h-4 w-4" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="#2563eb" aria-hidden>
-    <rect x="2" y="2" width="20" height="20" rx="4" />
-    <path d="M6 8h4v8H6zM8 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm6 2h2a2 2 0 0 1 2 2v6h-4v-6zm0 0V8a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v0" fill="#fff" />
+const IconList = ({ className = "h-6 w-6" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="#f59e42" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="6" cy="6" r="2" fill="#fbbf24" />
+    <circle cx="6" cy="12" r="2" fill="#fbbf24" />
+    <circle cx="6" cy="18" r="2" fill="#fbbf24" />
+    <line x1="10" y1="6" x2="20" y2="6" />
+    <line x1="10" y1="12" x2="20" y2="12" />
+    <line x1="10" y1="18" x2="20" y2="18" />
   </svg>
 );
+// ...otros iconos personalizados según la sección...
 
 function Logo({ variant = "dark", className = "h-10 w-auto" }) {
   const src = variant === "light" ? "/logos/nexus-light.png" : "/logos/nexus-dark.png";
