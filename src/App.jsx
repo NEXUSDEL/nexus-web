@@ -103,64 +103,72 @@ const social = [
 ];
 
 /* --- Iconos SVG inline --- */
+// Iconos industriales, limpios y profesionales con colores diferenciados
 const IconMenu = ({ className = "h-5 w-5" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-    <path d="M4 6h16M4 12h16M4 18h16" />
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="#374151" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+    <rect x="3" y="6" width="18" height="2" rx="1" fill="#60a5fa" />
+    <rect x="3" y="11" width="18" height="2" rx="1" fill="#60a5fa" />
+    <rect x="3" y="16" width="18" height="2" rx="1" fill="#60a5fa" />
   </svg>
 );
 const IconClose = ({ className = "h-5 w-5" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-    <path d="M6 18L18 6M6 6l12 12" />
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="#ef4444" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+    <line x1="6" y1="6" x2="18" y2="18" />
+    <line x1="6" y1="18" x2="18" y2="6" />
   </svg>
 );
 const IconPhone = ({ className = "h-5 w-5" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="#22c55e" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
     <path d="M22 16.92V21a1 1 0 0 1-1.1 1 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 3.1 1 1 0 0 1 3 2h4.09a1 1 0 0 1 1 .75c.12.58.32 1.15.6 1.69a1 1 0 0 1-.25 1L7.7 7.7a16 16 0 0 0 8.6 8.6l1.25-1.25a1 1 0 0 1 1-.25c.54.28 1.11.48 1.69.6a1 1 0 0 1 .75 1V21z" />
   </svg>
 );
 const IconMail = ({ className = "h-5 w-5" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-    <path d="M4 4h16v16H4z" />
-    <path d="M22 6l-10 7L2 6" />
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="#3b82f6" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+    <rect x="3" y="5" width="18" height="14" rx="2" fill="#dbeafe" />
+    <polyline points="3,7 12,13 21,7" fill="none" />
   </svg>
 );
 const IconMapPin = ({ className = "h-5 w-5" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-    <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0z" />
-    <circle cx="12" cy="10" r="3" />
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="#f59e42" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+    <path d="M12 2C16.4183 2 20 5.5817 20 10c0 7-8 12-8 12S4 17 4 10c0-4.4183 3.5817-8 8-8z" fill="#fbbf24" />
+    <circle cx="12" cy="10" r="3" fill="#fff" />
   </svg>
 );
-const IconBolt = ({ className = "h-6 w-6 text-yellow-400" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-    <path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z" />
+const IconBolt = ({ className = "h-6 w-6" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="#fde047" stroke="#facc15" strokeWidth="1.5" aria-hidden>
+    <polygon points="13 2 3 14 10 14 9 22 21 8 14 8 15 2" />
   </svg>
 );
 const IconDoc = ({ className = "h-6 w-6" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-    <path d="M14 2v6h6" />
+  <svg className={className} viewBox="0 0 24 24" fill="#60a5fa" stroke="#2563eb" strokeWidth="1.5" aria-hidden>
+    <rect x="4" y="2" width="16" height="20" rx="2" />
+    <rect x="8" y="6" width="8" height="2" rx="1" fill="#fff" />
+    <rect x="8" y="10" width="8" height="2" rx="1" fill="#fff" />
+    <rect x="8" y="14" width="5" height="2" rx="1" fill="#fff" />
   </svg>
 );
 const IconWrench = ({ className = "h-6 w-6" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-    <path d="M14.7 4a4 4 0 0 1 5.6 5.6L14 16.9 10 13l5.7-9z" />
-    <path d="M2 20l6-6" />
+  <svg className={className} viewBox="0 0 24 24" fill="#e5e7eb" stroke="#6b7280" strokeWidth="1.5" aria-hidden>
+    <path d="M22 14.92A7 7 0 0 1 9.08 2a5 5 0 0 0 6.84 6.84A7 7 0 0 1 22 14.92z" />
+    <circle cx="7" cy="17" r="3" fill="#6b7280" />
   </svg>
 );
 const IconShield = ({ className = "h-6 w-6" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+  <svg className={className} viewBox="0 0 24 24" fill="#fee2e2" stroke="#ef4444" strokeWidth="1.5" aria-hidden>
     <path d="M12 2l7 4v6c0 5-4 9-7 10-3-1-7-5-7-10V6l7-4z" />
+    <path d="M12 2v20" stroke="#ef4444" strokeWidth="1.5" />
   </svg>
 );
 const IconClock = ({ className = "h-5 w-5" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+  <svg className={className} viewBox="0 0 24 24" fill="#f3f4f6" stroke="#64748b" strokeWidth="2" aria-hidden>
     <circle cx="12" cy="12" r="10" />
     <path d="M12 6v6l4 2" />
   </svg>
 );
 const IconLinkedIn = ({ className = "h-4 w-4" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-    <path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0zM7 8h4.8v2.2h.1c.7-1.3 2.4-2.2 4-2.2 4.3 0 5 2.8 5 6.5V24H16v-7.8c0-1.9 0-4.3-2.6-4.3-2.6 0-3 2-3 4.1V24H7V8z" />
+  <svg className={className} viewBox="0 0 24 24" fill="#2563eb" aria-hidden>
+    <rect x="2" y="2" width="20" height="20" rx="4" />
+    <path d="M6 8h4v8H6zM8 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm6 2h2a2 2 0 0 1 2 2v6h-4v-6zm0 0V8a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v0" fill="#fff" />
   </svg>
 );
 
