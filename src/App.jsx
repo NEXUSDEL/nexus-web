@@ -103,69 +103,60 @@ const social = [
 ];
 
 /* --- Iconos SVG inline --- */
-// Iconos personalizados industriales para cada sección
+// Iconos minimalistas y monocromáticos
 const IconCompass = ({ className = "h-6 w-6" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="#1e293b" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-    <circle cx="12" cy="7" r="2" fill="#60a5fa" />
-    <path d="M12 9v7" />
-    <path d="M9 21l3-5 3 5" />
-    <path d="M7 14l-4-7h18l-4 7" />
-    <rect x="15.5" y="2.5" width="2" height="6" rx="1" fill="#fbbf24" transform="rotate(30 16.5 5.5)" />
-    <rect x="6.5" y="2.5" width="2" height="6" rx="1" fill="#fbbf24" transform="rotate(-30 7.5 5.5)" />
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+    <circle cx="12" cy="12" r="10" />
+    <polygon points="16 12 12 8 8 12 12 16 16 12" />
   </svg>
 );
 const IconUpdate = ({ className = "h-6 w-6" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="#0284c7" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M21 12a9 9 0 1 1-3.5-7.1" />
-    <polyline points="21 3 21 9 15 9" />
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+    <path d="M21 2v6h-6" />
+    <path d="M3 12a9 9 0 0 1 9-9c2.39 0 4.58.94 6.26 2.47" />
+    <path d="M21 12a9 9 0 1 1-9-9" />
   </svg>
 );
 const IconRulerCalc = ({ className = "h-6 w-6" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="#334155" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-    <rect x="2" y="14" width="8" height="8" rx="2" fill="#f1f5f9" />
-    <rect x="14" y="2" width="8" height="8" rx="2" fill="#f1f5f9" />
-    <path d="M4 18h4M6 16v4" />
-    <path d="M16 4h4M18 2v8" />
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+    <rect x="3" y="3" width="18" height="6" rx="2" />
+    <path d="M7 3v6M11 3v6M15 3v6M19 3v6" />
   </svg>
 );
 const IconDoc = ({ className = "h-6 w-6" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="#e0e7ef" stroke="#2563eb" strokeWidth="1.5" aria-hidden>
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
     <rect x="4" y="2" width="16" height="20" rx="2" />
-    <rect x="8" y="6" width="8" height="2" rx="1" fill="#fff" />
-    <rect x="8" y="10" width="8" height="2" rx="1" fill="#fff" />
-    <rect x="8" y="14" width="5" height="2" rx="1" fill="#fff" />
+    <line x1="8" y1="6" x2="16" y2="6" />
+    <line x1="8" y1="10" x2="16" y2="10" />
+    <line x1="8" y1="14" x2="13" y2="14" />
   </svg>
 );
 const IconCube3D = ({ className = "h-6 w-6" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="#fff" stroke="#0ea5e9" strokeWidth="1.7" strokeLinejoin="round">
-    <polygon points="12 2 22 7 12 12 2 7 12 2" fill="#fbbf24" />
-    <polyline points="2 7 2 17 12 22 22 17 22 7" />
-    <polyline points="12 12 12 22" />
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" aria-hidden>
+    <rect x="3" y="3" width="18" height="18" rx="2" />
+    <path d="M3 9h18M3 15h18M9 3v18M15 3v18" />
   </svg>
 );
 const IconSupport = ({ className = "h-6 w-6" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="#fff" stroke="#22c55e" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-    <circle cx="12" cy="12" r="10" fill="#f1f5f9" />
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+    <circle cx="12" cy="12" r="10" />
     <path d="M8 15c0 2 8 2 8 0" />
-    <circle cx="9" cy="10" r="1" fill="#22c55e" />
-    <circle cx="15" cy="10" r="1" fill="#22c55e" />
-    <path d="M12 17v2" />
-    <path d="M19 19l-2-2" />
-    <path d="M5 19l2-2" />
+    <circle cx="9" cy="10" r="1" />
+    <circle cx="15" cy="10" r="1" />
   </svg>
 );
 const IconIndustry = ({ className = "h-6 w-6" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="#f1f5f9" stroke="#334155" strokeWidth="1.7" strokeLinejoin="round">
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" aria-hidden>
     <rect x="2" y="12" width="20" height="8" rx="2" />
     <rect x="6" y="8" width="4" height="4" />
     <rect x="14" y="4" width="4" height="8" />
   </svg>
 );
 const IconList = ({ className = "h-6 w-6" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="#f59e42" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-    <circle cx="6" cy="6" r="2" fill="#fbbf24" />
-    <circle cx="6" cy="12" r="2" fill="#fbbf24" />
-    <circle cx="6" cy="18" r="2" fill="#fbbf24" />
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+    <circle cx="6" cy="6" r="2" />
+    <circle cx="6" cy="12" r="2" />
+    <circle cx="6" cy="18" r="2" />
     <line x1="10" y1="6" x2="20" y2="6" />
     <line x1="10" y1="12" x2="20" y2="12" />
     <line x1="10" y1="18" x2="20" y2="18" />
