@@ -215,12 +215,14 @@ const IconClose = ({ className = "h-5 w-5" }) => (
 );
 
 function Logo({ variant = "dark", className }) {
-  // Si es para el menú (dark), mostrar Logo X Blanco.png; si es para Hero (light), Baner_BSF.png grande y centrado
+  // Si es para el menú (dark), mostrar Logo X Blanco.png más grande; si es para Hero (light), Baner_BSF.png grande y centrado
   const src = variant === "light" ? "/logos/Baner_BSF.png" : "/logos/Logo X Blanco.png";
-  // Si es Hero, forzar centrado y tamaño grande
-  const sizeClass = variant === "light" ? (className || "mx-auto h-32 w-auto") : (className || "h-8 w-auto");
+  // Si es Hero, forzar centrado y tamaño grande; si es dark, tamaño grande también
+  const sizeClass = variant === "light"
+    ? (className || "mx-auto h-32 sm:h-40 w-auto")
+    : (className || "h-16 sm:h-20 w-auto");
   return <img src={src} alt="NEXUS Delineación Eléctrica Industrial" className={sizeClass} />;
-}
+
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -230,7 +232,7 @@ function Navbar() {
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <a href="#inicio" className="flex items-center gap-3">
-            <Logo variant="dark" className="h-8 w-auto" />
+            <Logo variant="dark" className="h-16 sm:h-20 w-auto" />
           </a>
           <div className="hidden md:flex items-center gap-8">
             {NAV.map((n) => (
@@ -418,7 +420,7 @@ function About() {
         </div>
         <div className="rounded-2xl border border-neutral-200 p-6 bg-neutral-50">
           <div className="flex items-center gap-3">
-            <Logo variant="dark" className="h-10" />
+            <Logo variant="dark" className="h-16 sm:h-20 w-auto" />
             <span className="text-sm text-neutral-600">Delineación Eléctrica Industrial</span>
           </div>
           <div className="mt-6 grid sm:grid-cols-2 gap-4 text-sm">
