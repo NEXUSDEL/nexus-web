@@ -516,7 +516,10 @@ function Footer() {
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-neutral-900 scroll-smooth">
+    <div
+      className="min-h-screen text-neutral-900 scroll-smooth bg-cover bg-center"
+      style={{ backgroundImage: 'url("/fotos/Fondo Plano Eléctrico.png")' }}
+    >
       <Navbar />
       <main>
         <Hero />
