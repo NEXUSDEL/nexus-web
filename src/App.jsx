@@ -215,7 +215,7 @@ const IconClose = ({ className = "h-5 w-5" }) => (
 );
 
 function Logo({ variant = "dark", className }) {
-  const src = variant === "light" ? "/logos/Nexus_Bane_FN.png" : "/logos/Logo X Negro.png";
+  const src = variant === "light" ? "/logos/Baner_BSF.png" : "/logos/Logo X Negro.png";
   // Si es light, forzar un tamaño mayor
   const sizeClass = variant === "light" ? "h-32 w-auto" : (className || "h-10 w-auto");
   return <img src={src} alt="NEXUS Delineación Eléctrica Industrial" className={sizeClass} />;
