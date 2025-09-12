@@ -253,7 +253,12 @@ function Delineacion() {
           {delineacionServices.map((s, idx) => (
             <div key={idx} className="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm hover:shadow-md transition-shadow">
               <div className="inline-flex items-center justify-center rounded-md bg-red-50 p-2">
-                {idx % 3 === 0 ? <IconDoc className="h-6 w-6 text-red-600" /> : idx % 3 === 1 ? <IconWrench className="h-6 w-6 text-red-600" /> : <IconShield className="h-6 w-6 text-red-600" />}
+                {idx === 0 && <IconCompass className="h-6 w-6" />} {/* Planos y Delineación */}
+                {idx === 1 && <IconUpdate className="h-6 w-6" />} {/* As-Built & Actualizaciones */}
+                {idx === 2 && <IconRulerCalc className="h-6 w-6" />} {/* Cálculo y Dimensionamiento */}
+                {idx === 3 && <IconDoc className="h-6 w-6" />} {/* Cumplimiento Normativo */}
+                {idx === 4 && <IconCube3D className="h-6 w-6" />} {/* Integración 3D */}
+                {idx === 5 && <IconSupport className="h-6 w-6" />} {/* Soporte a OT */}
               </div>
               <h3 className="mt-4 text-lg font-semibold">{s.title}</h3>
               <p className="mt-2 text-sm text-neutral-600">{s.desc}</p>
@@ -278,7 +283,9 @@ function Asesoramiento() {
           {asesoramientoPoints.map((point, idx) => (
             <div key={idx} className="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm hover:shadow-md transition-shadow">
               <div className="inline-flex items-center justify-center rounded-md bg-red-50 p-2">
-                {point.icon === "Wrench" ? <IconWrench className="h-6 w-6 text-red-600" /> : point.icon === "Doc" ? <IconDoc className="h-6 w-6 text-red-600" /> : <IconShield className="h-6 w-6 text-red-600" />}
+                {idx === 0 && <IconIndustry className="h-6 w-6" />} {/* Estandarización */}
+                {idx === 1 && <IconList className="h-6 w-6" />} {/* Listas de Materiales */}
+                {idx === 2 && <IconDoc className="h-6 w-6" />} {/* Optimización Documental */}
               </div>
               <h3 className="mt-4 text-lg font-semibold">{point.title}</h3>
               <p className="mt-2 text-sm text-neutral-600">{point.desc}</p>
