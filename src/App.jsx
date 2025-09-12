@@ -214,9 +214,11 @@ const IconClose = ({ className = "h-5 w-5" }) => (
   </svg>
 );
 
-function Logo({ variant = "dark", className = "h-10 w-auto" }) {
-  const src = variant === "light" ? "/logos/nexus-light.png" : "/logos/nexus-dark.png";
-  return <img src={src} alt="NEXUS Delineación Eléctrica Industrial" className={className} />;
+function Logo({ variant = "dark", className }) {
+  const src = variant === "light" ? "/logos/Nexus_Bane_FN.png" : "/logos/Logo X Negro.png";
+  // Si es light, forzar un tamaño mayor
+  const sizeClass = variant === "light" ? "h-32 w-auto" : (className || "h-10 w-auto");
+  return <img src={src} alt="NEXUS Delineación Eléctrica Industrial" className={sizeClass} />;
 }
 
 function Navbar() {
