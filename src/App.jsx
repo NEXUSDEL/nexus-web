@@ -12,441 +12,236 @@ const NAV = [
 
 const delineacionServices = [
   {
-    title: "Planos y Delineación",
-    desc: "Diseño y normalización de planos eléctricos industriales (unifilares, esquemas de control, bandejas y canalizaciones).",
+    title: "Ingeniería y Documentación Eléctrica",
+    desc:
+      "Diseño completo de esquemas eléctricos industriales desde cero, migración y actualización de planos antiguos según normativas IEC 61355 e IEC 81346. Desarrollo de gemelo digital para simulación y mantenimiento. Soporte experto continuo para oficinas técnicas.",
   },
   {
-    title: "As-Built & Actualizaciones",
-    desc: "Levantamiento, digitalización y actualización de documentación de instalaciones existentes.",
-  },
-  {
-    title: "Cálculo y Dimensionamiento",
-    desc: "Criterios de selección de cables, protecciones y cuadros según normativa y condiciones de servicio.",
-  },
-  {
-    title: "Cumplimiento Normativo",
-    desc: "Documentación conforme a reglamentos y estándares (REBT/IEC), listas de comprobación y marcado CE.",
+    title: "Digitalización & Modernización",
+    desc:
+      "Digitalización, normalización y modernización de la documentación en proyectos eléctricos existentes. Adaptación integral a los últimos estándares internacionales.",
   },
   {
     title: "Integración CAD/BIM",
-    desc: "Modelado y coordinación con Autodesk® (AutoCAD/Plant), Revit® MEP y exportación IFC.",
-  },
-  {
-    title: "Soporte a Obra",
-    desc: "Planificación, revisiones en campo y ajustes durante montaje y puesta en marcha.",
+    desc:
+      "Modelado y coordinación en EPLAN Electric y EPLAN Pro Panel",
   },
 ];
 
 const asesoramientoPoints = [
   {
-    title: "Macros y Objetos 3D",
-    desc: "Automatiza tareas repetitivas y reduce el tiempo de diseño drásticamente.",
-    icon: "Wrench"
+    title: "Estandarización de Procesos",
+    desc:
+      "Definición e implementación de estándares de diseño y automatización de flujos de trabajo a medida. Creación de plantillas, macros, objetos y bibliotecas inteligentes según la casuística de cada cliente.",
+    icon: "Wrench",
   },
   {
-    title: "Listas de Materiales",
-    desc: "Genera BOMs precisas y sin errores con un solo clic.",
-    icon: "Doc"
+    title: "Automatización en Ingeniería",
+    desc:
+      "Generación automática de listas de materiales (BOMs), cableados, mecanizados y documentación de taller, completamente adaptados a la fabricación de maquinaria y cuadros eléctricos.",
+    icon: "Doc",
   },
   {
-    title: "Optimización Documental",
-    desc: "Exporta datos de cableado y mecanizado directamente a producción.",
-    icon: "Shield"
-  }
+    title: "Transformación Digital Eléctrica",
+    desc:
+      "Asesoría estratégica para integración de herramientas CAE/EDA (EPLAN, AutoCAD, Revit) y digitalización de procesos de ingeniería eléctrica industrial.",
+    icon: "Shield",
+  },
 ];
 
 const formacionPrograms = [
   {
-    title: "Formación de Incorporación",
-    desc: "Preparamos a tus nuevos ingenieros para que sean productivos desde el primer día.",
-    icon: "Doc"
+    title: "Formación Operativa EPLAN",
+    desc:
+      "Incorporación y entrenamiento de nuevos ingenieros eléctricos en EPLAN Electric y ProPanel, desde nivel inicial hasta avanzado.",
+    icon: "Doc",
   },
   {
-    title: "Promoción Interna",
-    desc: "Capacitamos a tus técnicos de taller para que den el salto a la oficina técnica.",
-    icon: "Wrench"
+    title: "Impulso de Equipos Técnicos",
+    desc:
+      "Programas para la promoción interna de técnicos de taller hacia funciones de oficina técnica. Capacitación 100% práctica.",
+    icon: "Wrench",
   },
   {
-    title: "Actualización de Habilidades",
-    desc: "Nos aseguramos de que tu personal senior domine las últimas funcionalidades.",
-    icon: "Shield"
-  }
+    title: "Reciclaje y Excelencia",
+    desc:
+      "Actualización y optimización de equipos senior para asegurar que aprovechan el 100% del potencial del software EPLAN y responden a los nuevos retos de la industria.",
+    icon: "Shield",
+  },
 ];
 
 const projects = [
   {
-    title: "Línea de producción automatizada",
+    title: "Portafolio en construcción",
     img: "https://images.unsplash.com/photo-1581090700227-1e37b190418e?q=80&w=1600&auto=format&fit=crop",
   },
   {
-    title: "Centro de transformación 20/0,4 kV",
+    title: "¿Necesitas referencias?",
     img: "https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=1600&auto=format&fit=crop",
   },
   {
-    title: "Sala de cuadros y CCM",
+    title: "Solicítalas aquí",
     img: "https://images.unsplash.com/photo-1581093588401-16ef1b2c6e6c?q=80&w=1600&auto=format&fit=crop",
   },
 ];
 
 const features = [
-  { text: "Delineación de calidad" },
-  { text: "Asesoramiento experto" },
-  { text: "Formación práctica" },
+  { text: "Documentación técnica precisa y conforme a normativas" },
+  { text: "Optimización de procesos y reducción de tiempos de fabricación hasta un 30%" },
+  { text: "Formación técnica personalizada para equipos eléctricos" },
 ];
 
-const social = [
-  { label: "LinkedIn", href: "https://www.linkedin.com" },
-];
+const social = [{ label: "LinkedIn", href: "https://www.linkedin.com" }];
 
-/* --- Iconos SVG inline --- */
-const IconMenu = ({ className = "h-5 w-5" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-    <path d="M4 6h16M4 12h16M4 18h16" />
-  </svg>
-);
-const IconClose = ({ className = "h-5 w-5" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-    <path d="M6 18L18 6M6 6l12 12" />
-  </svg>
-);
-const IconPhone = ({ className = "h-5 w-5" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-    <path d="M22 16.92V21a1 1 0 0 1-1.1 1 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 3.1 1 1 0 0 1 3 2h4.09a1 1 0 0 1 1 .75c.12.58.32 1.15.6 1.69a1 1 0 0 1-.25 1L7.7 7.7a16 16 0 0 0 8.6 8.6l1.25-1.25a1 1 0 0 1 1-.25c.54.28 1.11.48 1.69.6a1 1 0 0 1 .75 1V21z" />
-  </svg>
-);
-const IconMail = ({ className = "h-5 w-5" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-    <path d="M4 4h16v16H4z" />
-    <path d="M22 6l-10 7L2 6" />
-  </svg>
-);
-const IconMapPin = ({ className = "h-5 w-5" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-    <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0z" />
-    <circle cx="12" cy="10" r="3" />
-  </svg>
-);
-const IconBolt = ({ className = "h-6 w-6 text-yellow-400" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-    <path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z" />
-  </svg>
-);
-const IconDoc = ({ className = "h-6 w-6" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-    <path d="M14 2v6h6" />
-  </svg>
-);
-const IconWrench = ({ className = "h-6 w-6" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-    <path d="M14.7 4a4 4 0 0 1 5.6 5.6L14 16.9 10 13l5.7-9z" />
-    <path d="M2 20l6-6" />
-  </svg>
-);
-const IconShield = ({ className = "h-6 w-6" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-    <path d="M12 2l7 4v6c0 5-4 9-7 10-3-1-7-5-7-10V6l7-4z" />
-  </svg>
-);
-const IconClock = ({ className = "h-5 w-5" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-    <circle cx="12" cy="12" r="10" />
-    <path d="M12 6v6l4 2" />
-  </svg>
-);
-const IconLinkedIn = ({ className = "h-4 w-4" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-    <path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0zM7 8h4.8v2.2h.1c.7-1.3 2.4-2.2 4-2.2 4.3 0 5 2.8 5 6.5V24H16v-7.8c0-1.9 0-4.3-2.6-4.3-2.6 0-3 2-3 4.1V24H7V8z" />
-  </svg>
-);
+// --------------------------------------
+// ICONOS Y LOGO (ajusta el import de las imágenes si es necesario)
+// --------------------------------------
+
+const IconMenu = ({ className = "h-5 w-5" }) => (/* ... */);
+const IconClose = ({ className = "h-5 w-5" }) => (/* ... */);
+const IconPhone = ({ className = "h-5 w-5" }) => (/* ... */);
+const IconMail = ({ className = "h-5 w-5" }) => (/* ... */);
+const IconMapPin = ({ className = "h-5 w-5" }) => (/* ... */);
+const IconBolt = ({ className = "h-6 w-6 text-yellow-400" }) => (/* ... */);
+const IconDoc = ({ className = "h-6 w-6" }) => (/* ... */);
+const IconWrench = ({ className = "h-6 w-6" }) => (/* ... */);
+const IconShield = ({ className = "h-6 w-6" }) => (/* ... */);
+const IconClock = ({ className = "h-5 w-5" }) => (/* ... */);
+const IconLinkedIn = ({ className = "h-4 w-4" }) => (/* ... */);
 
 function Logo({ variant = "dark", className = "h-10 w-auto" }) {
-  const src = variant === "light" ? "/logos/nexus-light.png" : "/logos/nexus-dark.png";
+  // Ajusta la ruta correcta a los logotipos exportados
+  const src = variant === "light"
+    ? "/logos/nexus-light.png"
+    : "/logos/nexus-dark.png";
   return <img src={src} alt="NEXUS Delineación Eléctrica Industrial" className={className} />;
 }
 
 function Navbar() {
   const [open, setOpen] = useState(false);
-
   return (
-    <div className="fixed top-0 inset-x-0 z-50 backdrop-blur bg-black/5">
-      <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
-          <a href="#inicio" className="flex items-center gap-3">
-            <Logo variant="dark" className="h-8 w-auto" />
-          </a>
-          <div className="hidden md:flex items-center gap-8">
-            {NAV.map((n) => (
-              <a key={n.id} href={`#${n.id}`} className="text-sm font-medium text-neutral-700 hover:text-neutral-900">
-                {n.label}
-              </a>
-            ))}
-            <a href="#contacto" className="inline-flex items-center rounded-2xl px-4 py-2 text-sm font-semibold shadow-sm bg-red-600 text-white hover:bg-red-700">Solicita presupuesto</a>
-          </div>
-          <button className="md:hidden p-2 rounded-xl border border-neutral-200" onClick={() => setOpen((v) => !v)} aria-label="Abrir menú">
-            {open ? <IconClose className="h-5 w-5" /> : <IconMenu className="h-5 w-5" />}
-          </button>
-        </div>
-        {open && (
-          <div className="md:hidden pb-4 flex flex-col gap-3">
-            {NAV.map((n) => (
-              <a key={n.id} href={`#${n.id}`} onClick={() => setOpen(false)} className="text-sm font-medium text-neutral-700">
-                {n.label}
-              </a>
-            ))}
-            <a href="#contacto" onClick={() => setOpen(false)} className="inline-flex items-center justify-center rounded-2xl px-4 py-2 text-sm font-semibold shadow-sm bg-red-600 text-white">Solicita presupuesto</a>
-          </div>
-        )}
-      </nav>
-    </div>
+    // ...tu código de navegación tal y como estaba
   );
 }
 
-function Hero() {
+// --------------------------------------
+// CONTENIDO SECCIONES
+// --------------------------------------
+
+function HomeSection() {
   return (
-    <section id="inicio" className="relative min-h-[88vh] grid place-items-center bg-neutral-950 text-white overflow-hidden">
-      <div className="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_top_right,rgba(255,255,255,0.15),transparent_50%),radial-gradient(ellipse_at_bottom_left,rgba(255,0,0,0.25),transparent_50%)]" />
-      <div className="absolute -top-20 right-10 rotate-12 opacity-10 blur-2xl">
-        <Logo variant="light" className="h-32 w-auto" />
-      </div>
-      <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-24 text-center">
-        <Logo variant="light" className="mx-auto h-16 sm:h-20 mb-6" />
-        <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight">Delineación, Asesoramiento y Formación</h1>
-        <p className="mt-5 text-base sm:text-lg text-neutral-300 max-w-3xl mx-auto">Documentación técnica precisa, procesos optimizados y equipo capacitado. Acompañamos tu proyecto desde la ingeniería hasta el montaje, con foco en calidad y eficiencia.</p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
-          <a href="#contacto" className="inline-flex items-center justify-center rounded-2xl px-6 py-3 text-sm font-semibold shadow-lg bg-white text-black hover:bg-neutral-200">Solicitar presupuesto</a>
-          <a href="#delineacion" className="inline-flex items-center justify-center rounded-2xl px-6 py-3 text-sm font-semibold border border-white/20 hover:bg-white/10">Ver servicios</a>
-        </div>
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-6 opacity-90">
-          {features.map((f, i) => (
-            <div key={i} className="inline-flex items-center gap-2 text-sm text-neutral-300">
-              <IconBolt className="h-4 w-4" />
-              <span>{f.text}</span>
-            </div>
-          ))}
-        </div>
-      </div>
+    <section id="inicio">
+      <h1>Ingeniería eléctrica efectiva, sin sorpresas</h1>
+      <p>
+        En <b>NEXUS</b> optimizamos tus procesos de diseño eléctrico y documentación industrial.
+        Te acompañamos desde la concepción hasta la entrega final, garantizando calidad, cumplimiento normativo y eficiencia.
+      </p>
+      <ul>
+        {features.map(({ text }, i) => (
+          <li key={i}>{text}</li>
+        ))}
+      </ul>
+      <p>¿Necesitas una propuesta directa? Te respondemos en menos de 24 h.</p>
     </section>
   );
 }
 
-function Delineacion() {
+function DelineacionSection() {
   return (
-    <section id="delineacion" className="py-20 bg-white">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-4xl font-extrabold text-neutral-900">Delineación Eléctrica Industrial</h2>
-        <p className="mt-3 text-neutral-600 max-w-3xl">¿Picos de trabajo en la oficina técnica? ¿Nuevos proyectos que desbordan a tu equipo? Que la falta de recursos internos no frene tu producción. Funcionamos como una extensión experta de tu equipo de ingeniería.</p>
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {delineacionServices.map((s, idx) => (
-            <div key={idx} className="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm hover:shadow-md transition-shadow">
-              <div className="inline-flex items-center justify-center rounded-md bg-red-50 p-2">
-                {idx % 3 === 0 ? <IconDoc className="h-6 w-6 text-red-600" /> : idx % 3 === 1 ? <IconWrench className="h-6 w-6 text-red-600" /> : <IconShield className="h-6 w-6 text-red-600" />}
-              </div>
-              <h3 className="mt-4 text-lg font-semibold">{s.title}</h3>
-              <p className="mt-2 text-sm text-neutral-600">{s.desc}</p>
-            </div>
-          ))}
+    <section id="delineacion">
+      <h2>Diseño y documentación eléctrica industrial</h2>
+      {delineacionServices.map(({ title, desc }, i) => (
+        <div key={i}>
+          <h3>{title}</h3>
+          <p>{desc}</p>
         </div>
-        <div className="mt-12 text-center">
-          <a href="#contacto" className="inline-flex items-center justify-center rounded-2xl px-6 py-3 text-sm font-semibold shadow-lg bg-red-600 text-white hover:bg-red-700">Solicitar presupuesto sin compromiso</a>
-        </div>
-      </div>
+      ))}
     </section>
   );
 }
 
-function Asesoramiento() {
+function AsesoramientoSection() {
   return (
-    <section id="asesoramiento" className="py-20 bg-neutral-50">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-4xl font-extrabold text-neutral-900">Asesoramiento Especializado</h2>
-        <p className="mt-3 text-neutral-600 max-w-3xl">¿Sientes que tu equipo solo aprovecha el 30% del potencial de EPLAN? Tener el mejor software no garantiza la eficiencia. La estandarización de procesos, sí. En NEXUS, no solo diseñamos; optimizamos tu flujo de trabajo de ingeniería.</p>
-        <div className="mt-10 grid gap-6 sm:grid-cols-1 lg:grid-cols-3">
-          {asesoramientoPoints.map((point, idx) => (
-            <div key={idx} className="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm hover:shadow-md transition-shadow">
-              <div className="inline-flex items-center justify-center rounded-md bg-red-50 p-2">
-                {point.icon === "Wrench" ? <IconWrench className="h-6 w-6 text-red-600" /> : point.icon === "Doc" ? <IconDoc className="h-6 w-6 text-red-600" /> : <IconShield className="h-6 w-6 text-red-600" />}
-              </div>
-              <h3 className="mt-4 text-lg font-semibold">{point.title}</h3>
-              <p className="mt-2 text-sm text-neutral-600">{point.desc}</p>
-            </div>
-          ))}
+    <section id="asesoramiento">
+      <h2>Automatización y estandarización de procesos</h2>
+      {asesoramientoPoints.map(({ title, desc, icon }, i) => (
+        <div key={i}>
+          <h3>{title}</h3>
+          <p>{desc}</p>
         </div>
-        <div className="mt-12 text-center">
-          <a href="#contacto" className="inline-flex items-center justify-center rounded-2xl px-6 py-3 text-sm font-semibold shadow-lg bg-red-600 text-white hover:bg-red-700">Solicita una sesión de diagnóstico gratuita</a>
-        </div>
-      </div>
+      ))}
     </section>
   );
 }
 
-function Formacion() {
+function FormacionSection() {
   return (
-    <section id="formacion" className="py-20 bg-white">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-4xl font-extrabold text-neutral-900">Formación Especializada</h2>
-        <p className="mt-3 text-neutral-600 max-w-3xl">¿Quieres promocionar a tus técnicos pero te falta tiempo para formarlos? El mayor activo de tu empresa es tu equipo. En NEXUS, nos encargamos de potenciarlo. Ofrecemos formación especializada en EPLAN Electric y ProPanel.</p>
-        <div className="mt-10 grid gap-6 sm:grid-cols-1 lg:grid-cols-3">
-          {formacionPrograms.map((program, idx) => (
-            <div key={idx} className="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm hover:shadow-md transition-shadow">
-              <div className="inline-flex items-center justify-center rounded-md bg-red-50 p-2">
-                {program.icon === "Wrench" ? <IconWrench className="h-6 w-6 text-red-600" /> : program.icon === "Doc" ? <IconDoc className="h-6 w-6 text-red-600" /> : <IconShield className="h-6 w-6 text-red-600" />}
-              </div>
-              <h3 className="mt-4 text-lg font-semibold">{program.title}</h3>
-              <p className="mt-2 text-sm text-neutral-600">{program.desc}</p>
-            </div>
-          ))}
+    <section id="formacion">
+      <h2>Formación especializada EPLAN Electric y ProPanel</h2>
+      {formacionPrograms.map(({ title, desc, icon }, i) => (
+        <div key={i}>
+          <h3>{title}</h3>
+          <p>{desc}</p>
         </div>
-        <div className="mt-12 text-center">
-          <a href="#contacto" className="inline-flex items-center justify-center rounded-2xl px-6 py-3 text-sm font-semibold shadow-lg bg-red-600 text-white hover:bg-red-700">Consulta nuestros planes de formación</a>
-        </div>
-      </div>
+      ))}
     </section>
   );
 }
 
-function Projects() {
+function ProyectosSection() {
   return (
-    <section id="proyectos" className="py-20 bg-neutral-50">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex items-end justify-between gap-6 flex-wrap">
-          <h2 className="text-2xl sm:text-4xl font-extrabold text-neutral-900">Proyectos</h2>
-          <a href="#contacto" className="text-sm font-semibold underline decoration-2 underline-offset-4 decoration-red-600">¿Tienes un proyecto? Hablemos</a>
-        </div>
-        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {projects.map((p, i) => (
-            <figure key={i} className="group overflow-hidden rounded-2xl border border-neutral-200 bg-white">
-              <img src={p.img} alt={p.title} className="aspect-[16/10] w-full object-cover group-hover:scale-[1.03] transition-transform" />
-              <figcaption className="p-4 text-sm text-neutral-700">{p.title}</figcaption>
-            </figure>
-          ))}
-        </div>
-      </div>
+    <section id="proyectos">
+      <h2>Proyectos - Portafolio en construcción</h2>
+      <p>Descubre próximamente casos de éxito en automatización y cuadros eléctricos industriales. ¿Quieres una referencia o ejemplo concreto? <b>Contáctanos y te lo preparamos a medida.</b></p>
+      {/* Puedes mantener la galería con imágenes neutras mientras no haya proyectos */}
     </section>
   );
 }
 
-function About() {
+function NosotrosSection() {
   return (
-    <section id="nosotros" className="py-20 bg-white">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
-        <div>
-          <h2 className="text-2xl sm:text-4xl font-extrabold text-neutral-900">Nosotros</h2>
-          <p className="mt-4 text-neutral-600">En <strong>NEXUS</strong> nos especializamos en delineación eléctrica industrial, asesoramiento y formación. Nuestro objetivo es entregar documentación clara y ejecutable que permita construir sin sorpresas: planos coherentes, listados completos y memoria técnica alineada con normativa.</p>
-          <ul className="mt-6 space-y-3 text-neutral-700">
-            <li>• Experiencia en fabricantes de cuadros eléctricos, maquinaria y automatización.</li>
-            <li>• Especialistas en trabajar con PYMEs de menos de 5 empleados.</li>
-            <li>• Comunicación fluida con ingeniería, compras y obra.</li>
-          </ul>
-        </div>
-        <div className="rounded-2xl border border-neutral-200 p-6 bg-neutral-50">
-          <div className="flex items-center gap-3">
-            <Logo variant="dark" className="h-10" />
-            <span className="text-sm text-neutral-600">Delineación Eléctrica Industrial</span>
-          </div>
-          <div className="mt-6 grid sm:grid-cols-2 gap-4 text-sm">
-            <div className="rounded-xl p-4 bg-white border border-neutral-200">
-              <h4 className="font-semibold">Metodología</h4>
-              <p className="mt-1 text-neutral-600">Kick-off, hitos, control de cambios y entrega final validada.</p>
-            </div>
-            <div className="rounded-xl p-4 bg-white border border-neutral-200">
-              <h4 className="font-semibold">Herramientas</h4>
-              <p className="mt-1 text-neutral-600">AutoCAD®, Revit® MEP, Plant 3D, EPLAN, Office/Excel, IFC.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <section id="nosotros">
+      <h2>¿Quién es NEXUS?</h2>
+      <p>
+        Soy especialista autónomo en delineación eléctrica industrial con más de una década de experiencia.
+        Mi propuesta: documentación de máxima calidad, reducción de plazos y digitalización optimizada para fabricantes de maquinaria y cuadros eléctricos.
+      </p>
+      <ul>
+        <li>+10 años en sector industrial y automatización</li>
+        <li>Enfoque en cumplimiento de normativas internacionales</li>
+        <li>Ahorro real en los procesos de fabricación (hasta un 30%)</li>
+      </ul>
     </section>
   );
 }
 
-function Contact() {
+function ContactoSection() {
   return (
-    <section id="contacto" className="py-20 bg-neutral-50">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-start">
-        <div>
-          <h2 className="text-2xl sm:text-4xl font-extrabold text-neutral-900">Contacto</h2>
-          <p className="mt-4 text-neutral-600">Cuéntanos brevemente tu necesidad y te responderemos con una propuesta personalizada en menos de 24 horas.</p>
-          <div className="mt-6 space-y-3 text-neutral-700">
-            <p className="flex items-center gap-2"><IconPhone className="h-5 w-5" /> <a href="tel:+34999999999" className="underline decoration-2 underline-offset-4 decoration-red-600">+34 999 99 99 99</a></p>
-            <p className="flex items-center gap-2"><IconMail className="h-5 w-5" /> <a href="mailto:contacto@nexus-elec.com" className="underline decoration-2 underline-offset-4 decoration-red-600">contacto@nexus-elec.com</a></p>
-            <p className="flex items-center gap-2"><IconMapPin className="h-5 w-5" /> Calle / Ciudad, España</p>
-            <div className="flex gap-3 pt-2">
-              {social.map((s, i) => (
-                <a key={i} href={s.href} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-2xl px-3 py-2 border border-neutral-300 text-sm hover:bg-neutral-100">
-                  <IconLinkedIn className="h-4 w-4" />
-                  {s.label}
-                </a>
-              ))}
-            </div>
-          </div>
-        </div>
-        <form className="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm" action="https://formspree.io/f/xbjvpqgj" method="POST">
-          <div className="grid sm:grid-cols-2 gap-4">
-            <div>
-              <label className="text-sm">Nombre</label>
-              <input name="nombre" required className="mt-1 w-full rounded-xl border border-neutral-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-600" />
-            </div>
-            <div>
-              <label className="text-sm">Empresa</label>
-              <input name="empresa" className="mt-1 w-full rounded-xl border border-neutral-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-600" />
-            </div>
-            <div className="sm:col-span-2">
-              <label className="text-sm">Email</label>
-              <input type="email" name="email" required className="mt-1 w-full rounded-xl border border-neutral-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-600" />
-            </div>
-            <div className="sm:col-span-2">
-              <label className="text-sm">Servicio de interés</label>
-              <select name="servicio" className="mt-1 w-full rounded-xl border border-neutral-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-600">
-                <option value="delineacion">Delineación eléctrica</option>
-                <option value="asesoramiento">Asesoramiento EPLAN</option>
-                <option value="formacion">Formación especializada</option>
-              </select>
-            </div>
-            <div className="sm:col-span-2">
-              <label className="text-sm">Mensaje</label>
-              <textarea name="mensaje" rows={5} required className="mt-1 w-full rounded-xl border border-neutral-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-600" placeholder="Describe brevemente tu proyecto o necesidad..." />
-            </div>
-            <div className="sm:col-span-2 flex items-center justify-between">
-              <div className="text-xs text-neutral-500">Al enviar aceptas nuestra política de privacidad.</div>
-              <button type="submit" className="rounded-2xl px-5 py-2 font-semibold bg-red-600 text-white hover:bg-red-700">Enviar consulta</button>
-            </div>
-          </div>
-        </form>
-      </div>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>¿Necesitas soporte experto, una formación o una propuesta personalizada? Cuéntanos brevemente tu necesidad, te respondemos en menos de 24 h.</p>
+      {/* Mantén el formulario sencillo: nombre, empresa, email y consulta */}
     </section>
   );
 }
 
-function Footer() {
-  const year = new Date().getFullYear();
-  return (
-    <footer className="py-10 bg-neutral-950 text-neutral-300">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
-        <div className="flex items-center gap-3">
-          <Logo variant="light" className="h-8" />
-          <span className="text-sm">NEXUS · Delineación Eléctrica Industrial</span>
-        </div>
-        <div className="text-xs">© {year} NEXUS. Todos los derechos reservados.</div>
-      </div>
-    </footer>
-  );
-}
+// --------------------------------------
+// EXPORT PRINCIPAL
+// --------------------------------------
 
-export default function NexusLanding() {
+export default function App() {
   return (
-    <div className="min-h-screen bg-white text-neutral-900 scroll-smooth">
+    <div>
       <Navbar />
-      <main>
-        <Hero />
-        <Delineacion />
-        <Asesoramiento />
-        <Formacion />
-        <Projects />
-        <About />
-        <Contact />
-      </main>
-      <Footer />
+      <Logo variant="dark" /> {/* Puedes intercambiar 'dark' o 'light' según el fondo */}
+      <HomeSection />
+      <DelineacionSection />
+      <AsesoramientoSection />
+      <FormacionSection />
+      <ProyectosSection />
+      <NosotrosSection />
+      <ContactoSection />
+      {/* Incluye tus iconos sociales o footer si lo deseas */}
     </div>
   );
 }
