@@ -466,7 +466,7 @@ function Contact() {
             </div>
           </div>
         </div>
-  <form className="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm" action="https://formspree.io/f/xbjvpqgj" method="POST">
+  <form className="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm" action="https://formspree.io/f/xqayzakg" method="POST">
           <div className="grid sm:grid-cols-2 gap-4">
             <div>
               <label className="text-sm">Nombre</label>
