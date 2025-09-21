@@ -454,7 +454,7 @@ function Contact() {
           <p className="mt-4 text-neutral-600">Cuéntanos brevemente tu necesidad y te responderemos con una propuesta personalizada en menos de 24 horas.</p>
           <div className="mt-6 space-y-3 text-neutral-700">
             <p className="flex items-center gap-2"><IconPhone className="h-5 w-5" /> <a href="tel:+34625522145" className="underline decoration-2 underline-offset-4 decoration-red-600">+34 625 52 21 45</a></p>
-            <p className="flex items-center gap-2"><IconMail className="h-5 w-5" /> <a href="mailto:nexusdelineacion@gmail.com" className="underline decoration-2 underline-offset-4 decoration-red-600">nexusdelineacion@gmail.com</a></p>
+            <p className="flex items-center gap-2"><IconMail className="h-5 w-5" /> <a href="mailto:nexus@nexusdel.es" className="underline decoration-2 underline-offset-4 decoration-red-600">nexusdelineacion@gmail.com</a></p>
             <p className="flex items-center gap-2"><IconMapPin className="h-5 w-5" /> Barcelona, España</p>
             <div className="flex gap-3 pt-2">
               {social.map((s, i) => (
@@ -466,7 +466,7 @@ function Contact() {
             </div>
           </div>
         </div>
-  <form className="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm" action="https://formspree.io/f/xqayzakg" method="POST">
+  <form className="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm" action="https://formspree.io/f/mvgwpzjw" method="POST">
           <div className="grid sm:grid-cols-2 gap-4">
             <div>
               <label className="text-sm">Nombre</label>
